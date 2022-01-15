@@ -14,8 +14,8 @@
 <body oncontextmenu='return false' class='snippet-body'>
     <div class="form__container">
         <div class="title__container">
-            <h1>Example UI container</h1>
-            <p>Follow the 4 simple steps to complete your mapping</p>
+            <h1>Помощь в подборе оборудования</h1>
+            <p>Ответьте на уточняющие вопросы, для получения рекомендации.</p>
         </div>
         <div class="body__container">
             <div class="left__container">
