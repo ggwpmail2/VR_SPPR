@@ -21,7 +21,7 @@
             <div class="left__container">
                 <div class="side__titles">
                     <div class="title__name">
-                        <h3>Your name</h3>
+                        <h3>Тип шлема</h3>
                         <p>Enter & press next</p>
                     </div>
                     <div class="title__name">
