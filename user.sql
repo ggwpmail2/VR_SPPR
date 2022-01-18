@@ -1,11 +1,24 @@
-/*CREATE TABLE IF NOT EXISTS `user` (
+CREATE TABLE IF NOT EXISTS `vr_set` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `email` varchar(100) NOT NULL,
-  `password` varchar(100) NOT NULL,
-  `first_name` varchar(100) NOT NULL,
-  `last_name` varchar(100) NOT NULL,
-  `mobile` int(11) NOT NULL,
-  `address` text NOT NULL,
+  `vr_name` varchar(100) NOT NULL,
+  `type` varchar(100) NOT NULL,
+  `integration` boolean NOT NULL,
+  `connect_type` varchar(100) NOT NULL,
+  `tracking_system` varchar(100) NOT NULL,
+  `accuracy_head` varchar(100) NOT NULL,
+  `dof` int(11) NOT NULL,
+  `display_type` varchar(100) NOT NULL,
+  `fov` int(11) NOT NULL,
+  `pupillary_distance` boolean NOT NULL,
+  `eye_tracking` boolean NOT NULL,
+  `lens_type` varchar(100) NOT NULL,
+  `audio_integrated` boolean NOT NULL,
+  `controller_type` varchar(100) NOT NULL,
+  `accuracy_controller` varchar(100) NOT NULL,
+  `base_station_controller` boolean NOT NULL,
+  `feedback_contoller` boolean NOT NULL,
+  `os_soft` varchar(100) NOT NULL,
+  `vr_system` varchar(100) NOT NULL,
+  `description` text NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
-*/
