@@ -1,15 +1,32 @@
 <?php 
 include('header.php');
 ?>
-<title>phpzag.com : Demo Multi Step Form using jQuery, Bootstrap and PHP</title>
-<script type="text/javascript" src="script/form.js"></script>
 
-<style type="text/css">
-  #register_form fieldset:not(:first-of-type) {
-    display: none;
-  }
-</style>
-<?php include('container.php');?>
+<body class="">
+<div role="navigation" class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+            <span class="sr-only">Навигация</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="http://www.phpzag.com" class="navbar-brand">PHPZAG.COM</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="http://www.phpzag.com">Home</a></li>
+           
+          </ul>
+         
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+	
+	<div class="container" style="min-height:500px;">
+	<div class=''>
+	</div>
 
 <div class="container">
 	<h2>Example: Multi Step Form using jQuery, Bootstrap and PHP</h2>		
@@ -62,7 +79,7 @@ include('header.php');
 		
 		
 	<div style="margin:50px 0px 0px 0px;">
-		<a class="btn btn-default read-more" style="background:#3399ff;color:white" href="http://www.phpzag.com/multi-step-form-using-jquery-bootstrap-and-php" title="">Back to Tutorial</a>			
+		<a class="btn btn-default read-more" style="background:#3399ff;color:white" href="/" title="">В начало</a>			
 	</div>	
 </div>	
-<?php include('../footer.php');?> 
+<?php include('footer.php');?> 
