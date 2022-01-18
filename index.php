@@ -34,7 +34,7 @@ include('header.php');
 	<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
 	</div>
 	<div class="alert alert-success hide"></div>	
-	<form id="register_form" novalidate action="form_action.php"  method="post">	
+	<form id="register_form" novalidate action="multi_form_action.php"  method="post">	
 	<fieldset>
 	<h2>Step 1: Add Account Details</h2>
 	<div class="form-group">
