@@ -14,6 +14,20 @@
   #register_form fieldset:not(:first-of-type) {
     display: none;
   }
+  fieldset {
+    padding: 7px;
+    border: 1px solid #f0f0f0;
+    margin: 7px;
+    background: #f0f0f0;
+    border-radius: 5px;
+}
+label {
+    margin-left: 7px;
+    margin-right: 10px;
+}
+h3 {
+    line-height:60px;
+}
 </style>
 </head>
 
@@ -27,12 +41,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="http://www.phpzag.com" class="navbar-brand">СППР ВР</a>
+                <a href="/" class="navbar-brand">СППР ВР</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="http://www.phpzag.com">Главная</a></li>
-
+                    <li class=""><a href="/">Главная</a></li>
+                    <li class=""><a href="/search.php">Подбор оборудования</a></li>
+                    <li class=""><a href="/add.php">Добавление оборудования</a></li>
+                    <li class=""><a href="/results.php">БД оборудования</a></li>
                 </ul>
 
             </div>

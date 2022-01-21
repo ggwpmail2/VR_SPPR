@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS `vr_set` (
+CREATE TABLE IF NOT EXISTS `form_question` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `vr_name` varchar(100) NOT NULL,
   `type` varchar(100) NOT NULL,
@@ -21,4 +21,7 @@ CREATE TABLE IF NOT EXISTS `vr_set` (
   `vr_system` varchar(100) NOT NULL,
   `description` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci AUTO_INCREMENT=1 ;
+
+INSERT INTO vr_set(vr_name, type, integration, connect_type, tracking_system, accuracy_head, dof, display_type, fov, pupillary_distance, eye_tracking, lens_type, audio_integrated, controller_type, accuracy_controller, base_station_controller, feedback_contoller, os_soft, description) VALUES('".$vr_name."', '" . $type . "', '". $integration."', '".$connect_type."', '".$tracking_system."', '".$accuracy_head."', '".$dof."', '".$display_type."', '".$fov."',  '".$pupillary_distance."', '".$eye_tracking."', '".$lens_type."', '".$audio_integrated."', '".$controller_type."', '".$accuracy_controller."', '".$base_station_controller."', '".$feedback_contoller."', '".$os_soft."', '".$vr_system."','". $description."')
+INSERT INTO vr_set(type, integration, connect_type, tracking_system, accuracy_head, dof, display_type, fov, pupillary_distance, eye_tracking, lens_type, audio_integrated, controller_type, accuracy_controller, base_station_controller, feedback_contoller, os_soft) VALUES( '" . $type . "', '". $integration."', '".$connect_type."', '".$tracking_system."', '".$accuracy_head."', '".$dof."', '".$display_type."', '".$fov."',  '".$pupillary_distance."', '".$eye_tracking."', '".$lens_type."', '".$audio_integrated."', '".$controller_type."', '".$accuracy_controller."', '".$base_station_controller."', '".$feedback_contoller."', '".$os_soft."', '".$vr_system."')
