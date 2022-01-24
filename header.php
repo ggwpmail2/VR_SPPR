@@ -11,6 +11,12 @@
 <script type="text/javascript" src="script/form.js"></script>
 
 <style type="text/css">
+    li {
+        transition: 0.3s;
+    }
+    li:hover {
+        background:#f0f0f0;
+    }
   #register_form fieldset:not(:first-of-type) {
     display: none;
   }
@@ -27,6 +33,28 @@ label {
 }
 h3 {
     line-height:60px;
+}
+.res {margin-top:30px;}
+.res td:nth-child(1) {
+    display: none;
+}
+.res th:nth-child(1) {
+    display: none;
+}
+.res td:nth-last-child(2) {
+    display: none;
+}
+.res th:nth-last-child(2) {
+    display: none;
+}
+.res th,.res td {
+    padding:5px;
+}
+.scrolltable {
+    overflow:auto;
+}
+.diz {
+    cursor: not-allowed;
 }
 </style>
 </head>

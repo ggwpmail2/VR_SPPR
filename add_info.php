@@ -13,17 +13,20 @@ include_once("db_connect.php");
 		if ( !isset($_POST['integration'])) $integration='0'; else $integration = mysqli_real_escape_string($conn, $_POST['integration']);
 		
 		$connect_type_chk = $_POST['connect_type'];
+		//echo count($connect_type_chk);
 		$connect_type="";  
     	foreach($connect_type_chk as $ct_chk1)  
       	 {  
-          $connect_type.= $ct_chk1.",";  
+		  if (count($connect_type_chk)==1) $connect_type.= $ct_chk1;
+		  else  $connect_type.= $ct_chk1.", "; 
       	 }  
 
 		$tracking_system_chk = $_POST['tracking_system'];
 		$tracking_system="";  
     	foreach($tracking_system_chk as $ts_chk1)  
       	 {  
-          $tracking_system.= $ts_chk1.",";  
+			if (count($tracking_system_chk)==1) $tracking_system.= $ts_chk1;
+			else  $tracking_system.= $ts_chk1.", "; 
       	 }  
 		
 		$accuracy_head = mysqli_real_escape_string($conn, $_POST['accuracy_head']);		
@@ -78,6 +81,6 @@ include_once("db_connect.php");
  </div>
  <div style="margin:50px 0px 0px 0px;">
             <a class="btn btn-default read-more" style="background:#3399ff;color:white" href="/" title="">На главную</a>
-        </div>
+</div>
 </div>
 <?php include('footer.php');?>

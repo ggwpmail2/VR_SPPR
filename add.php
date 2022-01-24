@@ -8,8 +8,7 @@ include_once("db_connect.php");
 
 <div class="container" style="min-height:500px;">
     <div class="container">
-        
-
+    
         <div class="form_add">
             <h2>Форма добавления нового оборудования</h2>
         <div class="alert alert-success hide"></div>
@@ -20,7 +19,8 @@ include_once("db_connect.php");
         
         <fieldset><input type="radio" id="type1" name="type" value="Автономный"><label for="type1">Автономный</label>
                   <input type="radio" id="type2" name="type" value="Стационарный"><label for="type2">Стационарный</label></fieldset>
-        <fieldset><input type="checkbox" id="integration" name="integration" value="1"><label>Интеграция с другими устройствами </label></fieldset>
+        
+        <fieldset><input type="checkbox" id="integration" name="integration" value="1"><label for="integration">Интеграция с другими устройствами </label></fieldset>
         
         <fieldset><input type="checkbox" id="connect_type1" name="connect_type[]" value="Проводной" required="required"><label for="connect_type1">Проводной</label>
                   <input type="checkbox" id="connect_type2" name="connect_type[]" value="Беспроводной" required="required"><label for="connect_type2">Беспроводной</label></fieldset>
@@ -40,28 +40,32 @@ include_once("db_connect.php");
     
         <fieldset><input type="text" class="form-control" name="fov" id="fov" required placeholder="Угол обзора"></fieldset>
      
-        <fieldset><input type="checkbox" id="pupillary_distance" name="pupillary_distance" value="1"><label>Настройка межзрачкового расстояния </label></fieldset>
+        <fieldset><input type="checkbox" id="pupillary_distance" name="pupillary_distance" value="1"><label for="pupillary_distance">Настройка межзрачкового расстояния </label></fieldset>
      
-        <fieldset><input type="checkbox" id="eye_tracking" name="eye_tracking" value="1"><label>Отслеживание взгляда </label></fieldset>
+        <fieldset><input type="checkbox" id="eye_tracking" name="eye_tracking" value="1"><label for="eye_tracking">Отслеживание взгляда </label></fieldset>
      
         <fieldset><input type="radio" id="lens_type1" name="lens_type" value="Линзы Френеля"><label for="lens_type1">Линзы Френеля</label>
                   <input type="radio" id="lens_type2" name="lens_type" value="Оптические"><label for="lens_type2">Оптические</label>
                   <input type="radio" id="lens_type3" name="lens_type" value="Асферические"><label for="lens_type3">Асферические</label>
                   <input type="radio" id="lens_type4" name="lens_type" value="Двояковыпуклые"><label for="lens_type4">Двояковыпуклые</label></fieldset>
        
-        <fieldset><input type="checkbox" id="audio_integrated" name="audio_integrated" value="1"><label>Интегрированные аудио устройства </label></fieldset>
+        <fieldset><input type="checkbox" id="audio_integrated" name="audio_integrated" value="1"><label for="audio_integrated">Интегрированные аудио устройства </label></fieldset>
       
-        <fieldset><input type="radio" id="controller_type1" name="controller_type" value="Steam VR"><label for="controller_type1">Steam VR</label>
-                  <input type="radio" id="controller_type2" name="controller_type" value="Open VR"><label for="controller_type2">Open VR</label>
-                  <input type="radio" id="controller_type3" name="controller_type" value="Vive Reality"><label for="controller_type3">Vive Reality</label>
-                  <input type="radio" id="controller_type4" name="controller_type" value="Meta VR"><label for="controller_type4">Meta VR</label></fieldset>
+        <fieldset><input type="radio" id="controller_type1" name="controller_type" value="Стандартные контроллеры"><label for="controller_type1">Стандартные контроллеры</label>
+                  <input type="radio" id="controller_type2" name="controller_type" value="Игровые контроллеры"><label for="controller_type2">Игровые контроллеры</label>
+                  <input type="radio" id="controller_type3" name="controller_type" value="Перчатки-контроллеры"><label for="controller_type3">Перчатки-контроллеры</label>
+                  <input type="radio" id="controller_type4" name="controller_type" value="Виртуальные контроллеры"><label for="controller_type4">Виртуальные контроллеры</label>
+                  <input type="radio" id="controller_type5" name="controller_type" value="Тактильные контроллеры"><label for="controller_type5">Тактильные контроллеры</label>
+                  <input type="radio" id="controller_type6" name="controller_type" value="Тактильные перчатки-контроллеры"><label for="controller_type6">Тактильные перчатки-контроллеры</label>
+                  <input type="radio" id="controller_type7" name="controller_type" value="Тактильные костюмы"><label for="controller_type7">Тактильные костюмы</label>
+                  <input type="radio" id="controller_type8" name="controller_type" value="Рули и джойстики"><label for="controller_type8">Рули и джойстики</label></fieldset>
    
         <fieldset><input type="radio" id="accuracy_controller1" name="accuracy_controller" value="Достаточная"><label for="accuracy_controller1">Достаточная</label>
                   <input type="radio" id="accuracy_controller2" name="accuracy_controller" value="Максимальная"><label for="accuracy_controller2">Максимальная</label></fieldset>
        
-        <fieldset><input type="checkbox" id="base_station_controller" name="base_station_controller" value="1"><label>Базовые станции </label></fieldset>
+        <fieldset><input type="checkbox" id="base_station_controller" name="base_station_controller" value="1"><label for="base_station_controller">Базовые станции </label></fieldset>
        
-        <fieldset><input type="checkbox" id="feedback_contoller" name="feedback_contoller" value="1"><label>Обратная связь контроллеров </label></fieldset>
+        <fieldset><input type="checkbox" id="feedback_contoller" name="feedback_contoller" value="1"><label for="feedback_contoller">Обратная связь контроллеров </label></fieldset>
        
         <fieldset><input type="radio" id="os_soft1" name="os_soft" value="Windows"><label for="os_soft1">Windows</label>
                   <input type="radio" id="os_soft2" name="os_soft" value="Android"><label for="os_soft2">Android</label>
